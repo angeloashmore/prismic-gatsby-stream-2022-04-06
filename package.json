@@ -16,8 +16,15 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "clsx": "^1.1.1",
     "gatsby": "^4.11.2",
+    "gatsby-plugin-postcss": "^5.11.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23"
   }
 }
