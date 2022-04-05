@@ -8,6 +8,7 @@
     "gatsby"
   ],
   "scripts": {
+    "dev": "npm run develop",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
@@ -15,8 +16,8 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "^4.11.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "gatsby": "^4.11.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   }
 }
