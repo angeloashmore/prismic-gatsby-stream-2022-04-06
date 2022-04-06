@@ -7,5 +7,5 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   jsxRuntime: "automatic",
-  plugins: ["gatsby-plugin-postcss"],
+  plugins: ["gatsby-plugin-postcss", "gatsby-plugin-svgr"],
 };

@@ -1,22 +1,24 @@
-import * as React from "react";
 import { Link } from "gatsby";
 import { SliceZone } from "@prismicio/react";
 
 import { Layout } from "../components/Layout";
+import Cover from "../slices/Cover";
+import Features from "../slices/Features";
+import Numbers from "../slices/Numbers";
 
 const components = {
-  cover: React.lazy(() => import("../slices/Cover")),
-  features: React.lazy(() => import("../slices/Features")),
-  numbers: React.lazy(() => import("../slices/Numbers")),
+  cover: Cover,
+  features: Features,
+  numbers: Numbers,
 };
 
 const IndexPage = () => {
   return (
     <Layout>
-      <div className="bg-green-800 p-4 text-sm font-bold text-white">
-        This page uses 😴 lazy components
-        <Link to="/eager" className="ml-3 font-normal text-white/60">
-          See the eager version &rarr;
+      <div className="bg-red-800 p-4 text-sm font-bold text-white">
+        This page uses 👹 eager components
+        <Link to="/" className="ml-3 font-normal text-white/60">
+          See the lazy version &rarr;
         </Link>
       </div>
       <SliceZone
