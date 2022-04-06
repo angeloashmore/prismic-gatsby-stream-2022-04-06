@@ -23,7 +23,7 @@ const IndexPage = () => {
       </div>
       <SliceZone
         slices={[
-          // { slice_type: "cover" },
+          { slice_type: "cover" },
           { slice_type: "features" },
           { slice_type: "numbers" },
         ]}

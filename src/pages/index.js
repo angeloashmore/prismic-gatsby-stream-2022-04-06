@@ -5,9 +5,9 @@ import { SliceZone } from "@prismicio/react";
 import { Layout } from "../components/Layout";
 
 const components = {
-  cover: React.lazy(() => import("../slices/Cover")),
-  features: React.lazy(() => import("../slices/Features")),
-  numbers: React.lazy(() => import("../slices/Numbers")),
+  cover: React.lazy(() => import("../slices/CoverLazy")),
+  features: React.lazy(() => import("../slices/FeaturesLazy")),
+  numbers: React.lazy(() => import("../slices/NumbersLazy")),
 };
 
 const IndexPage = () => {
@@ -22,8 +22,8 @@ const IndexPage = () => {
       <SliceZone
         slices={[
           { slice_type: "cover" },
-          // { slice_type: "features" },
-          // { slice_type: "numbers" },
+          { slice_type: "features" },
+          { slice_type: "numbers" },
         ]}
         components={components}
       />
